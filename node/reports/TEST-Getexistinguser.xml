@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+<testsuite name="Get existing user" errors="0" tests="1" failures="0" time="0.022" timestamp="2016-05-24T14:21:23">
+  <testcase classname="Get existing user" name="should return user" time="0.022"></testcase>
+</testsuite>
+</testsuites>

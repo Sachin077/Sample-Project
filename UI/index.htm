@@ -1,0 +1,79 @@
+<html>
+	<head>
+		<title>Form</title>
+	</head>
+	<body ng-app="UserReg" ng-controller="UserController">
+		<h1>Add User</h1>
+		<form>
+			First Name <input type="text" name="firstname" ng-model="aufn"/><br/>
+			Last Name <input type="text" name="lastname" ng-model="auln"/><br/>
+			Age <input type="text" name="age" ng-model="aua"/>
+			<br />
+			<button ng-click="add_user()">Submit</button>
+			<p ng-if="added">User Added successfully, with ID = {{auser.id}}</p>
+		</form>
+		<h1>Get User</h1>
+		<form>
+			ID <input type="text" name="id" ng-model="guid"/><br/>
+			<button ng-click="get_user()">Submit</button>
+		</form>
+
+		<div ng-if="gotUser">
+			<p><strong>ID:</strong> {{guser.id}}</p>
+			<p><strong>First name:</strong> {{guser.firstname}}</p>
+			<p><strong>Last name:</strong> {{guser.lastname}}</p>
+			<p><strong>Age:</strong> {{guser.age}}</p>
+		</div>
+		<p ng-if="gresult">User with given id does not exist</p>
+		<h1>Update User</h1>
+		<form>
+			ID <input type="text" name="id" ng-model="uuid"/><br/>
+			First Name <input type="text" name="firstname" ng-model="uufn"/><br/>
+			Last Name <input type="text" name="lastname" ng-model="uuln"/><br/>
+			Age <input type="text" name="age" ng-model="uua"/>
+			<br />
+			<button id="getUser" ng-click="update_user()">Submit</button>
+			<p ng-if="user.result">User updated successfully</p>
+			<p ng-if="nresult">User with given id does not exist</p>
+		</form>
+		<h1>Delete User</h1>
+		<form>
+			ID <input type="text" name="id" ng-model="duid"/><br/>
+			<button ng-click="delete_user()">Submit</button>
+			<p ng-if = "del.result">User deleted successfully</p>
+			<p ng-if="ndresult">User with given id does not exist</p>
+		</form>
+
+		<script src="http://code.jquery.com/jquery.js"></script>
+<script src="includes/js/jquery-1.8.2.min.js"></script>
+
+	<!-- Angular JS -->
+	<script src="includes/js/angular.min.js"></script>
+
+	<!-- JQUERY -->
+
+	<script type="text/javascript" src="includes/js/ng-infinite-scroll.min.js"></script>
+
+	<!-- Angular App -->
+	<script src="includes/js/app/app.js"></script>
+
+	<script src="includes/js/app/services.js"></script>
+
+	<script src="includes/js/app/controllers.js"></script>
+
+	<div id="mocha"></div> <!-- 1 -->
+        <script src="mocha.js"></script>
+        <script src="chai.js"></script>
+        <script src="sinon-1.17.3.js"></script>
+        <script>
+            mocha.ui('bdd'); // 2
+            mocha.reporter('html'); // 3
+            var expect = chai.expect; // 4
+        </script>
+        <script src="tests.js"></script> <!-- 5 -->
+        <script>
+            mocha.run(); // 6
+        </script>
+
+	</body>
+</html>

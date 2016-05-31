@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="0.016" tests="9" failures="0">
+  <testsuite name="Root Suite" timestamp="2016-05-24T07:00:42" tests="0" failures="0" time="0">
+  </testsuite>
+  <testsuite name="Get existing user" timestamp="2016-05-24T07:00:42" tests="1" failures="0" time="0.016">
+    <testcase name="Root Suite Get existing user should return user" time="0.016" classname="should return user">
+    </testcase>
+  </testsuite>
+  <testsuite name="Get non-existing user" timestamp="2016-05-24T07:00:42" tests="1" failures="0" time="0">
+    <testcase name="Root Suite Get non-existing user should return null" time="0" classname="should return null">
+    </testcase>
+  </testsuite>
+  <testsuite name="Create user" timestamp="2016-05-24T07:00:42" tests="1" failures="0" time="0">
+    <testcase name="Root Suite Create user should return user" time="0" classname="should return user">
+    </testcase>
+  </testsuite>
+  <testsuite name="Create user without name" timestamp="2016-05-24T07:00:42" tests="1" failures="0" time="0">
+    <testcase name="Root Suite Create user without name should return null" time="0" classname="should return null">
+    </testcase>
+  </testsuite>
+  <testsuite name="Create user without age" timestamp="2016-05-24T07:00:42" tests="1" failures="0" time="0">
+    <testcase name="Root Suite Create user without age should return null" time="0" classname="should return null">
+    </testcase>
+  </testsuite>
+  <testsuite name="Update existing user" timestamp="2016-05-24T07:00:42" tests="1" failures="0" time="0">
+    <testcase name="Root Suite Update existing user should return true" time="0" classname="should return true">
+    </testcase>
+  </testsuite>
+  <testsuite name="Update non-existing user" timestamp="2016-05-24T07:00:42" tests="1" failures="0" time="0">
+    <testcase name="Root Suite Update non-existing user should return false" time="0" classname="should return false">
+    </testcase>
+  </testsuite>
+  <testsuite name="Delete existing user" timestamp="2016-05-24T07:00:42" tests="1" failures="0" time="0">
+    <testcase name="Root Suite Delete existing user should return true" time="0" classname="should return true">
+    </testcase>
+  </testsuite>
+  <testsuite name="Update non-existing user" timestamp="2016-05-24T07:00:42" tests="1" failures="0" time="0">
+    <testcase name="Root Suite Update non-existing user should return false" time="0" classname="should return false">
+    </testcase>
+  </testsuite>
+</testsuites>
